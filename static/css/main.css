@@ -47,6 +47,8 @@ li
 .author
 {
     color: #444;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
 }
 .author h1,
 .author h2,
@@ -193,7 +195,9 @@ h3.intro
 
     text-decoration: none;
 
-    color: #966 !important;
+    color: rgb(178, 101, 101) !important;
+
+    margin-bottom: 0.1em;
 }
 .meta
 {
