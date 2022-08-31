@@ -61,6 +61,7 @@ li
     margin-bottom: 25px; */
 
 }
+
 .author h1,
 .author h2,
 .author h3,
@@ -80,7 +81,6 @@ li
     overflow: auto;
 
     max-width: 50%;
-    min-width: 765px;
     padding: 0 15px;
     margin: auto;
 }
@@ -88,8 +88,7 @@ li
 {
     overflow: auto;
 
-    max-width: 75%;
-    min-width: 850px;
+    /* max-width: 75%; */
     padding: 0 15px;
     margin: auto;
 }
@@ -101,7 +100,7 @@ li
 div.content
 {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 300;
 
     color: #777;
@@ -313,22 +312,6 @@ header.content-header .author
         font-family: 'Lato', sans-serif;
 
         margin-top: 30px;
-    }
-}
-
-@media (min-width: 768px) {
-    .wide-container {
-        width: 768px;
-    }
-}
-@media (min-width: 992px) {
-    .wide-container {
-        width: 940px;
-    }
-}
-@media (min-width: 1200px) {
-    .wide-container {
-        width: 1140px;
     }
 }
 
