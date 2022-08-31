@@ -1,12 +1,12 @@
-<header class="text-left title">
-  <h1 class="title">{{ .Title }}</h1>
+<header class="text-left content-header">
+  <h1 class="author">{{ .Site.Params.author }}</h1>
+  <h3 class="title">{{ .Title }}</h1>
 </header>
 <section id="category-pane" class="meta">
-  {{ if ne .Params.showpagemeta false }}
+  {{ if ne .Params.Showpagemeta false }}
   <div class="col-md-12">
     <h6 class="text-left meta">
        {{ if not .Date.IsZero }} PUBLISHED ON {{ .Date.Format .Site.Params.dateformat | upper }} {{end}}
-       / {{ math.Round (div (countwords .Content) 220.0) }} MIN READ
       {{ if isset .Params "categories" }}
       {{ $total := len .Params.categories }}
       {{ if gt $total 0 }}
@@ -23,9 +23,6 @@
 </section>
 <section id="content-pane" class="">
   <div class="col-md-12 text-justify content">
-    {{ if and ( ne .Params.toc false) (gt .WordCount 300 ) }}
-    {{ .TableOfContents }}
-    {{ end }}
     {{ .Content }}
   </div>
 </section>

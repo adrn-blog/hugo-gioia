@@ -15,10 +15,6 @@
   <a href="https://www.goodreads.com/{{.}}" aria-label="Goodreads" target="_blank"><i class="fab fa-goodreads" aria-hidden="true"></i></a>
   {{ end }}
 
-  {{ with .Site.Params.social.lastfm }}
-  <a href="https://www.last.fm/user/{{.}}/" aria-label="Last.fm" target="_blank"><i class="fab fa-lastfm" aria-hidden="true"></i></a>
-  {{ end }}
-
   {{ with .Site.Params.social.facebook }}
   <a href="https://facebook.com/{{.}}" aria-label="Facebook" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
   {{ end }}
@@ -152,7 +148,7 @@
   {{ end }}
 
   {{ with .Site.Params.social.orcid }}
-  <a href="https://orcid.org/{{.}}" aria-label="ORCID"><i class="fas fa-orcid" aria-hidden="true"></i></a>
+  <a href="https://orcid.org/{{.}}" aria-label="ORCID"><i class="fab fa-orcid" aria-hidden="true"></i></a>
   {{ end }}
 
   {{ with .Site.Params.social.pgp }}
@@ -162,6 +158,11 @@
   {{ if and ( .Site.Params.extra.rss ) ( .RSSLink ) }}
   <a href="{{ .RSSLink }}" aria-label="RSS" target="_blank"><i class="fas fa-rss" aria-hidden="true"></i></a>
   {{ end }}
+
+  {{ with .Site.Params.social.lastfm }}
+  <a href="https://www.last.fm/user/{{.}}/" aria-label="Last.fm" target="_blank"><i class="fab fa-lastfm" aria-hidden="true"></i></a>
+  {{ end }}
+
 </section>
 {{ if .Site.Params.extra.socialmarkup }}
 <script type="application/ld+json">

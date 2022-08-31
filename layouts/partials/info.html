@@ -1,6 +1,7 @@
 <section id="info-pane" class="text-center info">
+  <h1 class="author">{{ .Site.Params.author }}</h1>
   {{ with .Site.Params.intro }}
-  <h3 class="intro">{{ . | markdownify }}</h3>
+  <h4 class="intro">{{ . | markdownify }}</h3>
   {{ end }}
   {{ with .Site.Params.description }}
   <h4 class="description">{{ . | markdownify }}</h4>

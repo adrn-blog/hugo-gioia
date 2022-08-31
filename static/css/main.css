@@ -10,15 +10,25 @@
 {
     width: device-width;
 }
+
 a,
 a:hover,
 a:visited,
 a:link
 {
     text-decoration: none;
-
-    color: #526d7a;
 }
+a,
+a:visited,
+a:link
+{
+    color: #4b719f;
+}
+a:hover
+{
+    color: #5795ae;
+}
+
 body
 {
     font-family: 'Lato', sans-serif;
@@ -47,8 +57,9 @@ li
 .author
 {
     color: #444;
-    font-family: 'Merriweather', serif;
-    font-style: italic;
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+
 }
 .author h1,
 .author h2,
@@ -125,19 +136,20 @@ div.content
 }
 .footer
 {
-    margin-top: 10px;
+    margin-top: 40px;
 
     color: #8b8b8b;
 }
 .header
 {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .headshot
 {
-    width: 200px;
-    height: 200px;
+    /* width: 260px;
+    height: 260px; */
+    width: 40%;
 }
 .info
 {
@@ -146,8 +158,8 @@ div.content
 }
 .intro
 {
-    font-family: 'Merriweather', serif;
-    font-weight: 200;
+    /* font-family: 'Merriweather', serif; */
+    font-weight: 300;
     color: #777;
 }
 h3.intro
@@ -194,11 +206,14 @@ h3.intro
     font-weight: 300;
 
     text-decoration: none;
-
-    color: rgb(178, 101, 101) !important;
-
-    margin-bottom: 0.1em;
 }
+
+.main-menu h4
+{
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+
 .meta
 {
     font-family: 'Lato', sans-serif;
@@ -228,29 +243,47 @@ section.meta {
     font-size: 12px;
     font-weight: 300;
 }
+.extra-footer
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
 .social {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .social,
 .social a
 {
-    color: #2679a0;
     margin-left: 2px;
     margin-right: 2px;
 }
 .title
 {
-    font-family: 'Merriweather', serif;
+    /* font-family: 'Merriweather', serif; */
     font-weight: 400;
 
     color: #555;
 }
-header.title
+
+header.content-header
 {
     margin-top: 50px;
     padding: 0 15px;
 }
+
+header.content-header .title
+{
+    font-weight: 400;
+    font-style: italic;
+}
+
+header.content-header .author
+{
+    font-weight: 300;
+}
+
 @media (max-width: 991px)
 {
     .header
@@ -269,4 +302,11 @@ pre > code {
     white-space: pre;
     word-wrap: initial;
     word-break: initial;
+}
+
+.center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
