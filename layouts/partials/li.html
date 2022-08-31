@@ -1,8 +1,3 @@
-<header class="text-left content-header">
-  <h1 class="author">{{ .Site.Params.author }}</h1>
-  <h3 class="title">Blog</h1>
-</header>
-
 <section id="list-pane" class="list">
   <ul >
     {{ range .Data.Pages.ByPublishDate.Reverse }}

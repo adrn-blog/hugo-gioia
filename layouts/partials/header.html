@@ -47,4 +47,18 @@
 
 </head>
 <body lang="{{ .Site.LanguageCode }}">
+
+{{ if or (.Date.IsZero) (.IsHome) (.IsNode) }}
 <div class="container">
+{{ end }}
+
+{{ if and (not .Date.IsZero) (not .IsHome) (not .IsNode)}}
+<div class="wide-container">
+{{ end }}
+
+{{ if not .IsHome }}
+<header class="text-left content-header">
+  <h1 class="author"><a href="/">{{ .Site.Params.author }}</a></h1>
+  <h3 class="title">{{ .Title }}</h1>
+</header>
+{{ end }}
