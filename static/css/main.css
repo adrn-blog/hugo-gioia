@@ -303,9 +303,6 @@ header.content-header .author
         max-width: 80%;
         min-width: 0;
     }
-    .wide-container {
-        width: 940px;
-    }
     .header
     {
         margin-top: 50px;
@@ -319,9 +316,9 @@ header.content-header .author
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
     .wide-container {
-        width: 1140px;
+        width: 768px;
     }
 }
 @media (min-width: 992px) {
@@ -329,9 +326,9 @@ header.content-header .author
         width: 940px;
     }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .wide-container {
-        width: 768px;
+        width: 1140px;
     }
 }
 
