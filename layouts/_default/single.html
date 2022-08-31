@@ -2,13 +2,9 @@
 
 {{ partial "menu.html" . }}
 
+{{ partial "math.html" . }}
+
 {{ partial "content.html" . }}
-
-{{ if ne .Params.showcomments false }}
-
-{{ template "_internal/disqus.html" . }}
-
-{{ end }}
 
 {{ partial "footer.html" . }}
 
